@@ -12,7 +12,6 @@ module Github
       page = 1
       all_issues = []
       loop do
-        puts page
         response = @client.get("#{url}&per_page=#{PER_PAGE}&page=#{page}")
         issues = JSON.parse(response.body)
         break if issues.empty?
