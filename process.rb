@@ -41,8 +41,6 @@ module Github
           puts "#{issue['title']} - #{issue['state']} - Created at: #{issue['created_at']}"
         end
       end
-
-      puts "TOTAL ISSUES = #{sorted_issues.count}"
     end
   end
 end
